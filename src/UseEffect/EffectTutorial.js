@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+// useEffect hook is a higher order function executes its callback function whenever the page is re-rendered 
+
 function EffectTutorial() {
+
   const [data, setData] = useState("");
   const [count, setCount] = useState(0);
 
@@ -12,7 +15,8 @@ function EffectTutorial() {
         setData(response.data[0].email);
         console.log("API WAS CALLED");
       });
-  }, []);
+  }, []); 
+  // changes to values in the array above will trigger a useEffect call 
 
   return (
     <div>

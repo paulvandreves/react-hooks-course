@@ -8,10 +8,16 @@ import RefTutorial from "./UseRef/RefTutorial";
 import MemoTutorial from "./UseMemo/MemoTutorial";
 import CallBackTutorial from "./UseCallback/CallbackTutorial";
 
+import Counter from "./UseState/Counter";
+
 function App() {
   return (
     <div className="App">
-      <StateTutorial />
+      {/* <StateTutorial />
+      <Counter />  */}
+      {/* <ReducerTutorial />  */}
+      {/* <EffectTutorial /> */}
+      <RefTutorial />
     </div>
   );
 }
